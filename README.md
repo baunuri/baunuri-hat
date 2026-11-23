@@ -22,7 +22,9 @@ Full spec, pin map, power budget and design notes: [`pcb/README.md`](pcb/README.
 
 ## Status
 **Rev A**, ordered assembled from JLCPCB in November 2026 and brought up: the bring-up sketch
-(`firmware/hat_bringup/`) tests each part over USB. XL-Duck's servos run on the RS485 port at 1 Mbps.
+(`firmware/hat_bringup/`) tests each part over USB. An STS3215 runs on the servo bus at 1 Mbps (position within ~0.4°,
+286°/s peak once its acceleration limit, register 85, is raised from the factory 50). XL-Duck's servos run on the RS485
+port at 1 Mbps.
 
 ## Files
 | Path | What |
